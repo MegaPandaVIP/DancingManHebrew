@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>צופן האנשים הרוקדים - עברית</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>צופן האנשים הרוקדים - עברית</h1>
+        
+        <div class="input-section">
+            <textarea id="inputText" placeholder="הכנס טקסט בעברית כאן..." rows="4"></textarea>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="wordEndFlag">
+                        <input type="checkbox" id="wordEndFlag">
+                        הוסף דגלון בסוף מילה
+                    </label>
+                </div>
+                
+                <div class="control-group">
+                    <label for="figureSize">גודל דמות:</label>
+                    <input type="range" id="figureSize" min="30" max="100" value="50">
+                </div>
+                
+                <div class="buttons">
+                    <button id="encodeBtn">המר לצופן</button>
+                    <button id="downloadBtn">הורד כתמונה</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <h2>פלט</h2>
+            <div id="outputSvg" class="output-container"></div>
+        </div>
+
+        <div class="legend-section">
+            <h2>מקרא</h2>
+            <div id="legendGrid" class="legend-grid"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
